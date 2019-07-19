@@ -18,3 +18,8 @@ div
   margin-right: auto;
   width: 50%;
 }
+
+table, th, td 
+{
+  border: 1px solid black;
+}
