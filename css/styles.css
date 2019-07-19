@@ -1,0 +1,108 @@
+body 
+{
+    background-color: white;
+    color: black
+}
+
+header, main, nav
+{
+    text-align: center;
+}
+
+nav 
+{
+    font-weight: bold;
+}
+
+nav a 
+{   /* links within "nav" container */
+    padding: 15px;
+    padding-bottom: 4px;
+    font-size: 1.8em;
+    text-decoration: none;  /* removes underline */
+    color: black;         /* by default, links are blue */
+}
+
+nav a:hover, #current
+{   /* pseudo class */
+    border-bottom: 2px blue solid;
+    font-size: 2em;
+    transition: 0.9s;   /* transition effect */
+}
+
+main
+{
+    display: flex;
+    justify-content: center;
+    border-style: solid;        /* new css */
+    border-color: black;      /* new css */
+}
+
+footer 
+{
+    background-color: grey;
+    /* display: flex; */ 
+    text-align: center;    
+    color: black;
+    font-size: 1em;
+}
+
+table
+{
+    margin: 0px auto;
+}
+
+td
+{
+    padding-right: 10px;
+    font-size: 1.3em;
+}
+
+td strong
+{
+    color: black;
+}
+
+#table-header
+{
+    background-color: gray;
+}
+
+.table-row
+{
+    background-color: #008fb3;
+}
+
+ul
+{
+    width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.hobby
+{
+    color: yellow;
+}
+
+h1
+{
+    /* font-family: 'Pacifico', cursive; */
+    font-size: 4em;
+    margin-bottom: 0px;    
+}
+
+h2
+{
+    text-align: left;
+}
+
+h3
+{
+    text-align: left;
+}
+
+figure
+{
+    border-image: 1em;
+}
