@@ -1,6 +1,7 @@
 
 // import Express library
 const express = require("express");
+// var faker = require ("faker");
 // variable to access the methods
 // exposes a top-level function
 const app = express();
@@ -10,7 +11,7 @@ app.engine('html', require('ejs').renderFile);
 app.use(express.static("public"));
 
 // book var
-var book = {
+/* var book = {
     title: faker.lorem.words(),
     author: faker.name.findName(),
     author_image: faker.image.avatar(),
@@ -22,11 +23,13 @@ var book = {
 } 
 
 console.log(book);      
+*/
 
 // creating a “route”
 app.get("/", function(req, res){
 
-    res.render("index.html", book);
+    // res.render("index.html", book);
+    res.render("index.html");
 
 });
 
