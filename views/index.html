@@ -10,8 +10,6 @@
 <% include partials/header.ejs %>
   
       <script type="text/javascript">
-        
-        // var faker = require ("faker");
 
         var book = {
             title: faker.lorem.words(),
@@ -24,15 +22,15 @@
             long_description: faker.lorem.paragraph()
         } 
 
-        console.log(book);        
+        // console.log(book);        
 
         myFunction(book);
 
         function myFunction(book) {
 
           // alert("My book: " + book);
-          alert("My book title: " + book.title);
-          // alert("My book author: " + book.author);
+          alert("My favorite book title: " + book.title);
+          alert("My favorite book author: " + book.author);
 
         }
 
