@@ -1,7 +1,12 @@
+/**
+ * Class: CST-336
+ * HW 4: HTML, CSS, Node.js and Express.js
+ * Authors:
+ * - Victor Ramirez
+ **/
 
 // import Express library
 const express = require("express");
-// var faker = require ("faker");
 // variable to access the methods
 // exposes a top-level function
 const app = express();
@@ -9,21 +14,6 @@ const app = express();
 app.engine('html', require('ejs').renderFile);
 // add static files folder 
 app.use(express.static("public"));
-
-// book var
-/* var book = {
-    title: faker.lorem.words(),
-    author: faker.name.findName(),
-    author_image: faker.image.avatar(),
-    release_date: faker.date.recent(),
-    image: faker.image.abstract(),
-    price: faker.commerce.price(),
-    short_description: faker.lorem.sentence(),
-    long_description: faker.lorem.paragraph()
-} 
-
-console.log(book);      
-*/
 
 // creating a “route”
 app.get("/", function(req, res){
